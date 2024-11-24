@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href={{ asset('css/app.css') }}>
     <title>@yield('title', 'Online Store')</title>
 </head>
@@ -24,6 +25,7 @@
                     <a class="nav-link active" href={{ route('home.index') }}>Home</a>
                     <a class="nav-link active" href={{ route('product.index') }}>Product</a>
                     <a class="nav-link active" href={{ route('home.about') }}>About</a>
+                    <a class="nav-link active" href={{ route('cart.index') }}>Cart</a>
                     <div class="vr bg-white mx-2 d-none d-lg-block"></div>
                     @guest
                         <a class="nav-link active" href="{{ route('login') }}">Login</a>
